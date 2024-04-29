@@ -22,7 +22,7 @@ import {
 // POOL--SPECIFIC PARAMS
 // ----------------
 
-export const MaticConfig: IeMoneyConfiguration = {
+export const eMoneyConfig: IeMoneyConfiguration = {
   ...CommonsConfig,
   MarketId: 'Matic Market',
   ProviderId: 3,
@@ -70,4 +70,4 @@ export const MaticConfig: IeMoneyConfiguration = {
   },
 };
 
-export default MaticConfig;
+export default eMoneyConfig;

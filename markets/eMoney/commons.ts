@@ -87,7 +87,7 @@ export const CommonsConfig: ICommonConfiguration = {
     [eMoneyNetwork.mainnet]: '',
   },
   ProviderRegistry: {
-    [eMoneyNetwork.testnet]: '',
+    [eMoneyNetwork.testnet]: '0xE661e33B3B9555d39da80be57A5d0434B7D7f69b',
     [eMoneyNetwork.mainnet]: '',
   },
   ProviderRegistryOwner: {

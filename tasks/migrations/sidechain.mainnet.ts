@@ -17,16 +17,16 @@ task('sidechain:mainnet', 'Deploy market at sidechain')
       checkVerification();
     }
     console.log('Deploying Mocks\n');
-    await DRE.run('dev:deploy-mock-tokens');
-    printContracts();
+    // await DRE.run('dev:deploy-mock-tokens');
+    // printContracts();
 
-    // console.log('Migration started\n');
+    console.log('Migration started\n');
 
-    // console.log('0. Deploy address provider registry');
-    // await DRE.run('full:deploy-address-provider-registry', { pool: POOL_NAME });
+    //console.log('0. Deploy address provider registry');
+    //await DRE.run('full:deploy-address-provider-registry', { pool: POOL_NAME });
 
-    // console.log('1. Deploy address provider');
-    // await DRE.run('full:deploy-address-provider', { pool: POOL_NAME, skipRegistry });
+     console.log('1. Deploy address provider');
+     await DRE.run('full:deploy-address-provider', { pool: POOL_NAME, skipRegistry });
 
     // console.log('2. Deploy lending pool');
     // await DRE.run('full:deploy-lending-pool', { pool: POOL_NAME });
